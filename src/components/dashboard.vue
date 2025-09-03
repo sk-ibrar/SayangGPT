@@ -12,6 +12,9 @@
         class="large-input"
         :disabled="loading"
       />
+      <br/>
+    </div>
+    <div class="input-container2">
       <Button label="Send" @click="sendMessage" class="send-button" />
     </div>
     <ProgressSpinner v-if="loading" />
@@ -108,6 +111,13 @@ const sendQuery = async () => {
   gap: 1rem;
   align-items: center;
   justify-content: center;
+}
+
+.input-container2 {
+  margin-top: 1rem;
+  display: flex;
+  margin-left: 17rem;
+  
 }
 
 .large-input {
